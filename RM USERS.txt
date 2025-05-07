@@ -1,0 +1,225 @@
+RM Containers Dashboard
+RM-application-management-Amdocs
+RM-application-management-BSS
+RM-application-management
+RM-application-management-Cassiopae
+RM-application-management-CIO Service Assurance
+RM-application-management-Cisco
+RM-application-management-Data & Reporting
+RM-application-management-Data Management
+RM-application-management-Ericsson
+RM-application-management-Finance Synergy
+RM-application-management-Fusion
+RM-application-management-HP
+RM-application-management-IBM
+RM-application-management-ISP
+RM-application-management-MNT Management Notifications
+RM-application-management-Online
+RM-application-management-OpenPages
+RM-application-management-OSS
+RM-application-management-prod-Amdocs
+RM-application-management-prod-BSS
+RM-application-management-prod-Cassiopae
+RM-application-management-prod-CIO Service Assurance
+RM-application-management-prod-Cisco
+RM-application-management-prod-Data Management
+RM-application-management-prod-Ericsson
+RM-application-management-prod-Finance Synergy
+RM-application-management-prod-Fusion
+RM-application-management-prod-HP
+RM-application-management-prod-IBM
+RM-application-management-prod-MNT Management Notifications
+RM-application-management-prod-Online
+RM-application-management-prod-OpenPages
+RM-application-management-prod-OSS
+RM-application-management-prod-Sorriso
+RM-application-management-prod-SSO
+RM-application-management-prod-UXP
+RM-application-management-prod-Web
+RM-application-management-prod-Web Integration
+RM-application-management-prod-Wedo
+RM-application-management-prod-Windows
+RM-application-management-Sorriso
+RM-application-management-SSO
+RM-application-management-uat-Amdocs
+RM-application-management-uat-BSS
+RM-application-management-uat-Cassiopae
+RM-application-management-uat-CIO Service Assurance
+RM-application-management-uat-Cisco
+RM-application-management-uat-Data Management
+RM-application-management-uat-Ericsson
+RM-application-management-uat-Finance Synergy
+RM-application-management-uat-Fusion
+RM-application-management-uat-HP
+RM-application-management-uat-IBM
+RM-application-management-uat-MNT Management Notifications
+RM-application-management-uat-Online
+RM-application-management-uat-OpenPages
+RM-application-management-uat-OSS
+RM-application-management-uat-Sorriso
+RM-application-management-uat-SSO
+RM-application-management-uat-UXP
+RM-application-management-uat-Web
+RM-application-management-uat-Web Integration
+RM-application-management-uat-Wedo
+RM-application-management-uat-Windows
+RM-application-management-UXP
+RM-application-management-Web
+RM-application-management-Web Integration
+RM-application-management-Wedo
+RM-application-management-Windows
+RM-business-validation
+RM-business-validation-AT
+RM-business-validation-BE
+RM-business-validation-CEE
+RM-business-validation-CH
+RM-business-validation-CIO Operations Coordination
+RM-business-validation-CIO Service Assurance
+RM-business-validation-Customer Experience
+RM-business-validation-CZ
+RM-business-validation-DE
+RM-business-validation-Finance Synergy
+RM-business-validation-HU
+RM-business-validation-IE
+RM-business-validation-LU
+RM-business-validation-MNT Management Notifications
+RM-business-validation-NL
+RM-business-validation-One Network Database
+RM-business-validation-OpenPages
+RM-business-validation-Operational Excellence
+RM-business-validation-PE
+RM-business-validation-PL
+RM-business-validation-Product
+RM-business-validation-Programming
+RM-business-validation-RO
+RM-business-validation-Royalty Reporting
+RM-business-validation-SK
+RM-business-validation-Supply Chain Management
+RM-business-validation-UK
+RM-Country-ALL
+RM-create-release-container
+RM-create-release-request
+RM-demand-management
+RM-demand-management-AT
+RM-demand-management-BE
+RM-demand-management-CEE
+RM-demand-management-CH
+RM-demand-management-CIO Operations Coordination
+RM-demand-management-CIO Service Assurance
+RM-demand-management-CL
+RM-demand-management-Customer Experience
+RM-demand-management-CZ
+RM-demand-management-DE
+RM-demand-management-Finance Synergy
+RM-demand-management-HU
+RM-demand-management-IE
+RM-demand-management-LU
+RM-demand-management-MNT Management Notifications
+RM-demand-management-NL
+RM-demand-management-One Network Database
+RM-demand-management-OpenPages
+RM-demand-management-Operational Excellence
+RM-demand-management-PE
+RM-demand-management-PL
+RM-demand-management-Product
+RM-demand-management-Programming
+RM-demand-management-RO
+RM-demand-management-Royalty Reporting
+RM-demand-management-SK
+RM-demand-management-Supply Chain Management
+RM-demand-management-UK
+RM-developers
+RM-development-manager
+RM-development-manager-Amdocs
+RM-development-manager-BSS
+RM-development-manager-Cassiopae
+RM-development-manager-CIO Service Assurance
+RM-development-manager-Cisco
+RM-development-manager-Data Management
+RM-development-manager-Ericsson
+RM-development-manager-Finance Synergy
+RM-development-manager-Fusion
+RM-development-manager-HP
+RM-development-manager-IBM
+RM-development-manager-ISP
+RM-development-manager-MNT Management Notifications
+RM-development-manager-Online
+RM-development-manager-OpenPages
+RM-development-manager-OSS
+RM-development-manager-Sorriso
+RM-development-manager-SSO
+RM-development-manager-UXP
+RM-development-manager-Web
+RM-development-manager-Web Integration
+RM-application-management-uat-IBM
+RM-development-manager-Wedo
+RM-development-manager-Wedo
+RM-development-manager-Windows
+RM-EM-patch-team
+RM-EM-release-management
+Copy of RM Permission Scheme
+RM ORT Permission Scheme
+RM Permission Scheme
+Edit members Delete
+RM-integration-management
+RM-lg-demand-management-prod
+RM-lg-demand-management-uat
+RM-ORT-manager
+RM-read-only-users
+RM-UAT-manager
+RM-UAT-manager-AT
+RM-UAT-manager-BE
+RM-UAT-manager-CEE
+RM-UAT-manager-CH
+RM-UAT-manager-CIO Operations Coordination
+RM-UAT-manager-CIO Service Assurance
+RM-UAT-manager-Customer Experience
+RM-UAT-manager-CZ
+RM-UAT-manager-DE
+RM-UAT-manager-Finance Synergy
+RM-UAT-manager-HU
+RM-UAT-manager-IE
+RM-UAT-manager-MNT Management Notifications
+RM-UAT-manager-NL
+RM-UAT-manager-One Network Database
+RM-UAT-manager-OpenPages
+RM-UAT-manager-Operational Excellence
+RM-UAT-manager-PE
+RM-UAT-manager-PL
+RM-UAT-manager-Product
+RM-UAT-manager-Programming
+RM-UAT-manager-RO
+RM-UAT-manager-Royalty Reporting
+RM-UAT-manager-SK
+RM-UAT-manager-Supply Chain Management
+RM-UAT-manager-UK
+RM-UAT-team
+RM-UAT-team-AT
+RM-UAT-team-BE
+RM-UAT-team-CEE
+RM-UAT-team-CH
+RM-UAT-team-CIO Operations Coordination
+RM-UAT-team-CIO Service Assurance
+RM-UAT-team-Customer Experience
+RM-UAT-team-CZ
+RM-UAT-team-DE
+RM-UAT-team-Finance Synergy
+RM-UAT-team-HU
+RM-UAT-team-IE
+RM-UAT-team-LU
+RM-UAT-team-MNT Management Notifications
+RM-UAT-team-NL
+RM-UAT-team-One Network Database
+RM-UAT-team-OpenPages
+RM-UAT-team-Operational Excellence
+RM-UAT-team-PE
+RM-UAT-team-PL
+RM-UAT-team-Product
+RM-UAT-team-Programming
+RM-UAT-team-RO
+RM-UAT-team-Royalty Reporting
+RM-UAT-team-SK
+RM-UAT-team-Supply Chain Management
+RM-UAT-team-UK
+RM-users
+RM-users-readonly
