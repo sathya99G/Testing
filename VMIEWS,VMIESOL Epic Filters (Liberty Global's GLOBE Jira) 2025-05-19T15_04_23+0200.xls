@@ -1,0 +1,2565 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>VMIEWS,VMIESOL Epic Filters (Liberty Global's GLOBE Jira)</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="29">
+        <td colspan="11">
+            <img src="https://globe.upc.biz/jira/jira-logo-scaled.png" width="109" height="29" border="0" alt="VMIEWS,VMIESOL Epic Filters (Liberty Global's GLOBE Jira)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            <a href="https://globe.upc.biz/jira/issues/?filter=149756">VMIEWS,VMIESOL Epic Filters (Liberty Global's GLOBE Jira)</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="11">
+            Displaying <strong>83</strong> issues at <strong>19/May/2025 3:04 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                            <issuetable-web-component>
+                <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                            Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                            Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_15101" data-id="customfield_15101">
+                            Parent Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-subtasks" data-id="subtasks">
+                            Sub-Tasks
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10008" data-id="customfield_10008">
+                            Epic Name
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow1938360" rel="1938360" data-issuekey="VMIESOL-50960" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50960" href="https://globe.upc.biz/jira/browse/VMIESOL-50960">VMIESOL-50960</a>
+</td>
+                                            <td class="summary"><p>
+                P&amp;P - Employee Portfolio via COMET/Clarify (CLY OEA and Employee Portfolio changes)
+    </p>
+</td>
+                                            <td class="assignee">            Murukesh Rajendran
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-436">VMIERM-436</a><span>Employee Orders through COMET</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      P&amp;P - Employee Portfolio via COMET/Clarify (CLY OEA and Employee Portfolio changes)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1940370" rel="1940370" data-issuekey="VMIESOL-51347" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-51347" href="https://globe.upc.biz/jira/browse/VMIESOL-51347">VMIESOL-51347</a>
+</td>
+                                            <td class="summary"><p>
+                Store Errored API Calls in WFM
+    </p>
+</td>
+                                            <td class="assignee">            Ankita Das
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-51348                        </td>
+                                            <td class="customfield_10008">      Store Errored API Calls in WFM
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922507" rel="1922507" data-issuekey="VMIESOL-48314" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48314" href="https://globe.upc.biz/jira/browse/VMIESOL-48314">VMIESOL-48314</a>
+</td>
+                                            <td class="summary"><p>
+                Employee Concession Product Configuration
+    </p>
+</td>
+                                            <td class="assignee">            Murukesh Rajendran
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-460">VMIERM-460</a><span>Employee Concession </span></td>
+                                            <td class="subtasks">                                        VMIESOL-51860                        </td>
+                                            <td class="customfield_10008">      Employee Concession Product Configuration
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922505" rel="1922505" data-issuekey="VMIESOL-48312" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48312" href="https://globe.upc.biz/jira/browse/VMIESOL-48312">VMIESOL-48312</a>
+</td>
+                                            <td class="summary"><p>
+                VMTV Website Migration
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-506">VMIERM-506</a><span>VMTV Website Migration</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      VMTV Website Migration
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922503" rel="1922503" data-issuekey="VMIESOL-48310" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48310" href="https://globe.upc.biz/jira/browse/VMIESOL-48310">VMIESOL-48310</a>
+</td>
+                                            <td class="summary"><p>
+                WFM Automated SMS - Retail
+    </p>
+</td>
+                                            <td class="assignee">            Ankita Das
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-498">VMIERM-498</a><span>WFM Automated SMS - Retail </span></td>
+                                            <td class="subtasks">                                        VMIESOL-50673                        </td>
+                                            <td class="customfield_10008">      WFM Automated SMS - Retail
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922502" rel="1922502" data-issuekey="VMIESOL-48309" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48309" href="https://globe.upc.biz/jira/browse/VMIESOL-48309">VMIESOL-48309</a>
+</td>
+                                            <td class="summary"><p>
+                NPS: End of Contract
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-504">VMIERM-504</a><span>NPS: End of Contract</span></td>
+                                            <td class="subtasks">                                        VMIESOL-50316                        </td>
+                                            <td class="customfield_10008">      NPS: End of Contract
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1904451" rel="1904451" data-issuekey="VMIESOL-44932" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-44932" href="https://globe.upc.biz/jira/browse/VMIESOL-44932">VMIESOL-44932</a>
+</td>
+                                            <td class="summary"><p>
+                IEMSP-Comet Rest API Containerization
+    </p>
+</td>
+                                            <td class="assignee">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="reporter">            Suresh Kanna
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      IEMSP-Comet Rest API Containerization
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1905906" rel="1905906" data-issuekey="VMIESOL-45188" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-45188" href="https://globe.upc.biz/jira/browse/VMIESOL-45188">VMIESOL-45188</a>
+</td>
+                                            <td class="summary"><p>
+                IEMSP-Code Deployment Tests for Legacy Components using GitHub Actions
+    </p>
+</td>
+                                            <td class="assignee">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="reporter">            Suresh Kanna
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      IEMSP-Code Deployment Tests for Legacy Components using GitHub Actions
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1918737" rel="1918737" data-issuekey="VMIESOL-47525" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-47525" href="https://globe.upc.biz/jira/browse/VMIESOL-47525">VMIESOL-47525</a>
+</td>
+                                            <td class="summary"><p>
+                Exclusives section - App
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Simon Corbett
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48186                        </td>
+                                            <td class="customfield_10008">      Exclusives section - App
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1949105" rel="1949105" data-issuekey="VMIESOL-52984" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52984" href="https://globe.upc.biz/jira/browse/VMIESOL-52984">VMIESOL-52984</a>
+</td>
+                                            <td class="summary"><p>
+                B2B May Devices 2025
+    </p>
+</td>
+                                            <td class="assignee">            Murukesh Rajendran
+    </td>
+                                            <td class="reporter">            Valentina Defendini
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Closed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.&lt;/span&gt;">Closed</span>    </td>
+                                            <td class="resolution">    Deployed
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIEDFD-7752">VMIEDFD-7752</a><span>Sales, P&amp;P Changes (incl Regulatory changes)​</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      B2B May Devices 2025
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1945739" rel="1945739" data-issuekey="VMIESOL-52386" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52386" href="https://globe.upc.biz/jira/browse/VMIESOL-52386">VMIESOL-52386</a>
+</td>
+                                            <td class="summary"><p>
+                VoLTE &amp; 5G
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eoin Hegarty
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      VoLTE &amp; 5G
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1945674" rel="1945674" data-issuekey="VMIESOL-52401" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52401" href="https://globe.upc.biz/jira/browse/VMIESOL-52401">VMIESOL-52401</a>
+</td>
+                                            <td class="summary"><p>
+                PEGA Agent Tooling Health Check - Integration with SAMKNOWS, PLUME &amp; Outage Checker
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-52417                        </td>
+                                            <td class="customfield_10008">      Agent Tooling - Health Check Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947392" rel="1947392" data-issuekey="VMIESOL-52786" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52786" href="https://globe.upc.biz/jira/browse/VMIESOL-52786">VMIESOL-52786</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER : 44295- Updating Fixed Directory Preferences in Sales Journey 
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Preethi Jayapalan
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Updating Fixed Directory Preferences in Sales Journey 
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947390" rel="1947390" data-issuekey="VMIESOL-52784" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52784" href="https://globe.upc.biz/jira/browse/VMIESOL-52784">VMIESOL-52784</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER : 42873 B2C Handling Transfer-In Orders through Cerillion (WS, NBI and SIRO as Altnet Partners)
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      B2C Handling Transfer-In Orders through Cerillion (WS, NBI and SIRO as Altnet Partners)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1942829" rel="1942829" data-issuekey="VMIESOL-51863" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-51863" href="https://globe.upc.biz/jira/browse/VMIESOL-51863">VMIESOL-51863</a>
+</td>
+                                            <td class="summary"><p>
+                DCOM - VM IE - Fixes required in DCOM
+    </p>
+</td>
+                                            <td class="assignee">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="reporter">            Tejas Parkar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      DCOM - VM IE - Fixes required in DCOM
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1882088" rel="1882088" data-issuekey="VMIESOL-41208" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-41208" href="https://globe.upc.biz/jira/browse/VMIESOL-41208">VMIESOL-41208</a>
+</td>
+                                            <td class="summary"><p>
+                IEMSP-Improve Performance to Prevent Request Timeouts in Sales Get Basket API (DCOM)
+    </p>
+</td>
+                                            <td class="assignee">            Suresh Kanna
+    </td>
+                                            <td class="reporter">            Suresh Kanna
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Improve Performance to Prevent Request Timeouts in Sales Get Basket API (DCOM)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1846682" rel="1846682" data-issuekey="VMIESOL-35904" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-35904" href="https://globe.upc.biz/jira/browse/VMIESOL-35904">VMIESOL-35904</a>
+</td>
+                                            <td class="summary"><p>
+                CDH - Retention offer, Strategy changes
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-49620                        </td>
+                                            <td class="customfield_10008">      CDH - Retention offer, Strategy change
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1877829" rel="1877829" data-issuekey="VMIESOL-40362" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-40362" href="https://globe.upc.biz/jira/browse/VMIESOL-40362">VMIESOL-40362</a>
+</td>
+                                            <td class="summary"><p>
+                CDH - Product Catalogue &amp; Basket Rules Data In from COMET DB through Snowflake
+    </p>
+</td>
+                                            <td class="assignee">            Gopala Krishna Vankayalapaty
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Critical
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      CDH - Product Catalogue &amp; Basket Rules Data In from COMET DB through Snowflake
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1863164" rel="1863164" data-issuekey="VMIESOL-38249" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-38249" href="https://globe.upc.biz/jira/browse/VMIESOL-38249">VMIESOL-38249</a>
+</td>
+                                            <td class="summary"><p>
+                Additional Fields to be displayed on &#39;View Address&#39; button of PEGA GUI
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48060,                                                VMIESOL-49717                        </td>
+                                            <td class="customfield_10008">      Additional Parameters to be displayed on &#39;View Address&#39; button of PEGA GUI
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1774057" rel="1774057" data-issuekey="VMIESOL-23399" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-23399" href="https://globe.upc.biz/jira/browse/VMIESOL-23399">VMIESOL-23399</a>
+</td>
+                                            <td class="summary"><p>
+                Pega - Case Management Enhancements - Monitoring screen transfer visibility
+    </p>
+</td>
+                                            <td class="assignee">            Bhawna Dalal
+    </td>
+                                            <td class="reporter">            Brian Ahern
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Closed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.&lt;/span&gt;">Closed</span>    </td>
+                                            <td class="resolution">    Rejected
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48055                        </td>
+                                            <td class="customfield_10008">      Monitoring screen transfer visibility
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1770450" rel="1770450" data-issuekey="VMIESOL-22358" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-22358" href="https://globe.upc.biz/jira/browse/VMIESOL-22358">VMIESOL-22358</a>
+</td>
+                                            <td class="summary"><p>
+                Pega - enhancement to phone number headings
+    </p>
+</td>
+                                            <td class="assignee">            Bhawna Dalal
+    </td>
+                                            <td class="reporter">            Brian Ahern
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Closed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.&lt;/span&gt;">Closed</span>    </td>
+                                            <td class="resolution">    Rejected
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48057                        </td>
+                                            <td class="customfield_10008">      Pega - enhancement to phone number headings
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1849523" rel="1849523" data-issuekey="VMIESOL-36380" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-36380" href="https://globe.upc.biz/jira/browse/VMIESOL-36380">VMIESOL-36380</a>
+</td>
+                                            <td class="summary"><p>
+                NBI Deployment File through SFTP Route
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Refinement&lt;/span&gt;">Refinement</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48236,                                                VMIESOL-50648,                                                VMIESOL-51169                        </td>
+                                            <td class="customfield_10008">      NBI Deployment File through SFTP Route
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1899530" rel="1899530" data-issuekey="VMIESOL-44041" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-44041" href="https://globe.upc.biz/jira/browse/VMIESOL-44041">VMIESOL-44041</a>
+</td>
+                                            <td class="summary"><p>
+                GIS Build-E2E Handover Process- Power BI Integration
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-47626                        </td>
+                                            <td class="customfield_10008">      GIS Build-E2E Handover Process- Power BI Integration
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1899527" rel="1899527" data-issuekey="VMIESOL-44039" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-44039" href="https://globe.upc.biz/jira/browse/VMIESOL-44039">VMIESOL-44039</a>
+</td>
+                                            <td class="summary"><p>
+                System Architecture &amp; Design
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Vandana Kumari
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48239                        </td>
+                                            <td class="customfield_10008">      System Architecture &amp; Design
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1721916" rel="1721916" data-issuekey="VMIESOL-13073" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-13073" href="https://globe.upc.biz/jira/browse/VMIESOL-13073">VMIESOL-13073</a>
+</td>
+                                            <td class="summary"><p>
+                Guided Assist Requirements
+    </p>
+</td>
+                                            <td class="assignee">            Pardeep Kochhar
+    </td>
+                                            <td class="reporter">            Bhawna Dalal
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48058                        </td>
+                                            <td class="customfield_10008">      Guided Assist Requirements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1936738" rel="1936738" data-issuekey="VMIESOL-50685" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50685" href="https://globe.upc.biz/jira/browse/VMIESOL-50685">VMIESOL-50685</a>
+</td>
+                                            <td class="summary"><p>
+                ACS Upgrade from 3.8 to 4.3- Impact on IE Kennedy
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Sophie Kilroe
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      ACS Upgrade from 3.8 to 4.3- Impact on IE Kennedy
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1936733" rel="1936733" data-issuekey="VMIESOL-50680" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50680" href="https://globe.upc.biz/jira/browse/VMIESOL-50680">VMIESOL-50680</a>
+</td>
+                                            <td class="summary"><p>
+                OFF Upgrade
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Sophie Kilroe
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      OFF Upgrade
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950823" rel="1950823" data-issuekey="VMIESOL-53320" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53320" href="https://globe.upc.biz/jira/browse/VMIESOL-53320">VMIESOL-53320</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER - 46672- Spillover - PNI Underground Integration and Testing Support for Production (PI21 to PI22)
+    </p>
+</td>
+                                            <td class="assignee">            Abhishek Jolly
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-57">VMIERM-57</a><span>Network Expansion for XGSPON</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      46672- Spillover - PNI Underground Integration and Testing Support for Production (PI20 to PI21)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950820" rel="1950820" data-issuekey="VMIESOL-53318" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53318" href="https://globe.upc.biz/jira/browse/VMIESOL-53318">VMIESOL-53318</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER - 46674 - Spillover SOM automated “data pollution” exception handling
+    </p>
+</td>
+                                            <td class="assignee">            Kunal Deshmukh
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      46674 - Spillover SOM automated “data pollution” exception handling
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1951553" rel="1951553" data-issuekey="VMIESOL-53562" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53562" href="https://globe.upc.biz/jira/browse/VMIESOL-53562">VMIESOL-53562</a>
+</td>
+                                            <td class="summary"><p>
+                SBC Monitoring Spillover (spillover from PI21 to PI22)
+    </p>
+</td>
+                                            <td class="assignee">            Pradeep Sahu
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-10">VMIERM-10</a><span>Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      SBC Monitoring Spillover (spillover from PI21 to PI22)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947571" rel="1947571" data-issuekey="VMIESOL-52806" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52806" href="https://globe.upc.biz/jira/browse/VMIESOL-52806">VMIESOL-52806</a>
+</td>
+                                            <td class="summary"><p>
+                Update Basket Rules Comet for Loyalty Offers Mobile
+    </p>
+</td>
+                                            <td class="assignee">            Kevin Moloney
+    </td>
+                                            <td class="reporter">            Eoin Hegarty
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Update Basket Rules Comet for Loyalty Offers Mobile
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947543" rel="1947543" data-issuekey="VMIESOL-52802" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52802" href="https://globe.upc.biz/jira/browse/VMIESOL-52802">VMIESOL-52802</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER: VMIESOL-27633 Handling Cooling off for Mobile Cancellations and Terminations
+    </p>
+</td>
+                                            <td class="assignee">            Amruta Verma
+    </td>
+                                            <td class="reporter">            Amruta Verma
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-52">VMIERM-52</a><span>NEW COM &amp; MOBILE - Customer Order Journeys</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      SPILLOVER: VMIESOL-27633 Handling Cooling off for Mobile Cancellations and Terminations
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922299" rel="1922299" data-issuekey="VMIESOL-48306" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48306" href="https://globe.upc.biz/jira/browse/VMIESOL-48306">VMIESOL-48306</a>
+</td>
+                                            <td class="summary"><p>
+                Web &amp; App Accessibility Regulation Readiness (EAA) - Part 2
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-433">VMIERM-433</a><span>Web &amp; App Accessibility Regulation Readiness (EAA) - Part 2</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Web &amp; App Accessibility Regulation Readiness (EAA) - Part 2
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1756667" rel="1756667" data-issuekey="VMIESOL-19919" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-19919" href="https://globe.upc.biz/jira/browse/VMIESOL-19919">VMIESOL-19919</a>
+</td>
+                                            <td class="summary"><p>
+                Jira 2 Way Integration with ServiceNow
+    </p>
+</td>
+                                            <td class="assignee">            Ronan Kelly
+    </td>
+                                            <td class="reporter">            Angari Raut
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Reopened&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved.&lt;/span&gt;">Reopened</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-22">VMIERM-22</a><span>IT Systems Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      19919-Jira 2 Way Integration with ServiceNow
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1944110" rel="1944110" data-issuekey="VMIESOL-52031" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52031" href="https://globe.upc.biz/jira/browse/VMIESOL-52031">VMIESOL-52031</a>
+</td>
+                                            <td class="summary"><p>
+                IEMSP-Comet Rest API Containerization Readiness_Part 2
+    </p>
+</td>
+                                            <td class="assignee">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="reporter">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      IEMSP-Comet Rest API Containerization Readiness
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947535" rel="1947535" data-issuekey="VMIESOL-52796" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52796" href="https://globe.upc.biz/jira/browse/VMIESOL-52796">VMIESOL-52796</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER : 24669 Fixed Cancellation and Termination within contract period
+    </p>
+</td>
+                                            <td class="assignee">            Amruta Verma
+    </td>
+                                            <td class="reporter">            Amruta Verma
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-52">VMIERM-52</a><span>NEW COM &amp; MOBILE - Customer Order Journeys</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      SPILLOVER : 24669 Fixed Cancellation and Termination within contract period
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1721918" rel="1721918" data-issuekey="VMIESOL-13075" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-13075" href="https://globe.upc.biz/jira/browse/VMIESOL-13075">VMIESOL-13075</a>
+</td>
+                                            <td class="summary"><p>
+                Pega Improvements (CVD Items)
+    </p>
+</td>
+                                            <td class="assignee">            Gopala Krishna Vankayalapaty
+    </td>
+                                            <td class="reporter">            Brian Ahern
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48064                        </td>
+                                            <td class="customfield_10008">      Pega Improvements (CVD Items)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1942178" rel="1942178" data-issuekey="VMIESOL-51798" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-51798" href="https://globe.upc.biz/jira/browse/VMIESOL-51798">VMIESOL-51798</a>
+</td>
+                                            <td class="summary"><p>
+                CR - Account Status update post Port Out
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Amruta Verma
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-52">VMIERM-52</a><span>NEW COM &amp; MOBILE - Customer Order Journeys</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      CR - Account Status update post Termination
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1800710" rel="1800710" data-issuekey="VMIESOL-27509" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-27509" href="https://globe.upc.biz/jira/browse/VMIESOL-27509">VMIESOL-27509</a>
+</td>
+                                            <td class="summary"><p>
+                Push Notification APP Framework &amp; Bill Ready Push Notification
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Simon Corbett
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Refinement&lt;/span&gt;">Refinement</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-47706,                                                VMIESOL-51652                        </td>
+                                            <td class="customfield_10008">      Push Notification APP Framework &amp; Bill Ready Push Notification
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1944768" rel="1944768" data-issuekey="VMIESOL-52306" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52306" href="https://globe.upc.biz/jira/browse/VMIESOL-52306">VMIESOL-52306</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER - 24671- B2C - Fixed: New/Existing customer orders Extras on WS, SIRO or NBI Network (IE MSP capacity)
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-41">VMIERM-41</a><span>NEW COM &amp; MOBILE - Care Journeys</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      SPILLOVER - 24671 - B2C - Fixed: New/Existing customer orders Extras on WS, SIRO or NBI Network (IE MSP capacity)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922288" rel="1922288" data-issuekey="VMIEWS-3347" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3347" href="https://globe.upc.biz/jira/browse/VMIEWS-3347">VMIEWS-3347</a>
+</td>
+                                            <td class="summary"><p>
+                WFM ESO Engine
+    </p>
+</td>
+                                            <td class="assignee">            Ankita Das
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-472">VMIERM-472</a><span>WFM ESO Engine </span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      WFM ESO Engine
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950824" rel="1950824" data-issuekey="VMIESOL-53321" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53321" href="https://globe.upc.biz/jira/browse/VMIESOL-53321">VMIESOL-53321</a>
+</td>
+                                            <td class="summary"><p>
+                SPILLOVER SOM - Offnet Partner Notifications (RequestToCancel - Inflight Order Cancellations) &amp; Customer Initiated Cancellations
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Offnet Partner Notifications (RequestToCancel - Inflight Order Cancellations) &amp; Customer Initiated Cancellations
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1947461" rel="1947461" data-issuekey="VMIESOL-52859" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52859" href="https://globe.upc.biz/jira/browse/VMIESOL-52859">VMIESOL-52859</a>
+</td>
+                                            <td class="summary"><p>
+                SOM (Test Only) Spillover and PI22 Stories 
+    </p>
+</td>
+                                            <td class="assignee">            Snehal Kodape
+    </td>
+                                            <td class="reporter">            Mukesh Kumar
+    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      SOM (Test Only) Spillover and PI22 Stories 
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1935172" rel="1935172" data-issuekey="VMIESOL-50442" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50442" href="https://globe.upc.biz/jira/browse/VMIESOL-50442">VMIESOL-50442</a>
+</td>
+                                            <td class="summary"><p>
+                Agent Tooling - Health Check Enhancements
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-50644                        </td>
+                                            <td class="customfield_10008">      Agent Tooling - Health Check Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1944712" rel="1944712" data-issuekey="VMIESOL-52271" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52271" href="https://globe.upc.biz/jira/browse/VMIESOL-52271">VMIESOL-52271</a>
+</td>
+                                            <td class="summary"><p>
+                Spillover - (41958)Fixed Sales Journeys - XGSPON Cerillion customer upgrade/Downgrade to XGSPON
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Pinky Joshi
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Spillover - (41958)Fixed Sales Journeys - XGSPON Cerillion customer upgrade/Downgrade to XGSPON
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922504" rel="1922504" data-issuekey="VMIESOL-48311" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48311" href="https://globe.upc.biz/jira/browse/VMIESOL-48311">VMIESOL-48311</a>
+</td>
+                                            <td class="summary"><p>
+                Pega SMS Enhancements
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-461">VMIERM-461</a><span>Pega SMS Enhancements</span></td>
+                                            <td class="subtasks">                                        VMIESOL-50795                        </td>
+                                            <td class="customfield_10008">      Pega SMS Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922500" rel="1922500" data-issuekey="VMIESOL-48307" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48307" href="https://globe.upc.biz/jira/browse/VMIESOL-48307">VMIESOL-48307</a>
+</td>
+                                            <td class="summary"><p>
+                Employee Orders through COMET into Clarify (IE MSP Backend changes)
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-436">VMIERM-436</a><span>Employee Orders through COMET</span></td>
+                                            <td class="subtasks">                                        VMIESOL-50484                        </td>
+                                            <td class="customfield_10008">      Employee Orders through COMET into Clarify (IE MSP Backend changes)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1960894" rel="1960894" data-issuekey="VMIESOL-55677" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-55677" href="https://globe.upc.biz/jira/browse/VMIESOL-55677">VMIESOL-55677</a>
+</td>
+                                            <td class="summary"><p>
+                Migration Extension and Additional Scope
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Eoin Hegarty
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Migration Extension and Additional Scope
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1944961" rel="1944961" data-issuekey="VMIESOL-52345" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52345" href="https://globe.upc.biz/jira/browse/VMIESOL-52345">VMIESOL-52345</a>
+</td>
+                                            <td class="summary"><p>
+                Fixed June Portfolio 2025
+    </p>
+</td>
+                                            <td class="assignee">            Murukesh Rajendran
+    </td>
+                                            <td class="reporter">            Nicholette Murphy
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Fixed June Portfolio 2025
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1934245" rel="1934245" data-issuekey="VMIESOL-50242" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50242" href="https://globe.upc.biz/jira/browse/VMIESOL-50242">VMIESOL-50242</a>
+</td>
+                                            <td class="summary"><p>
+                Dragon and DRT to EVE migration
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Planning&lt;/span&gt;">Planning</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-50243                        </td>
+                                            <td class="customfield_10008">      Dragon and DRT to EVE migration
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1948899" rel="1948899" data-issuekey="VMIESOL-52980" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52980" href="https://globe.upc.biz/jira/browse/VMIESOL-52980">VMIESOL-52980</a>
+</td>
+                                            <td class="summary"><p>
+                B2C May Devices 2025
+    </p>
+</td>
+                                            <td class="assignee">            Murukesh Rajendran
+    </td>
+                                            <td class="reporter">            Valentina Defendini
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Resolved&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.&lt;/span&gt;">Resolved</span>    </td>
+                                            <td class="resolution">    Deployed
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIEDFD-7752">VMIEDFD-7752</a><span>Sales, P&amp;P Changes (incl Regulatory changes)​</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      B2C May Devices 2025
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1881103" rel="1881103" data-issuekey="VMIESOL-41086" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-41086" href="https://globe.upc.biz/jira/browse/VMIESOL-41086">VMIESOL-41086</a>
+</td>
+                                            <td class="summary"><p>
+                Upgradation and cloning
+    </p>
+</td>
+                                            <td class="assignee">            Rebatikant Senapati
+    </td>
+                                            <td class="reporter">            Pardha Jonnalagadda
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Planning&lt;/span&gt;">Planning</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-22">VMIERM-22</a><span>IT Systems Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Upgradation and cloning
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1943960" rel="1943960" data-issuekey="VMIESOL-52065" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52065" href="https://globe.upc.biz/jira/browse/VMIESOL-52065">VMIESOL-52065</a>
+</td>
+                                            <td class="summary"><p>
+                Create Parent-Child Case Structure on PEGA
+    </p>
+</td>
+                                            <td class="assignee">            Seamus Dunphy
+    </td>
+                                            <td class="reporter">            Mohsin Bijapure
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      PEGA - Parent and Child Cases on Pega
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1948350" rel="1948350" data-issuekey="VMIESOL-52899" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52899" href="https://globe.upc.biz/jira/browse/VMIESOL-52899">VMIESOL-52899</a>
+</td>
+                                            <td class="summary"><p>
+                IT Enhancements
+    </p>
+</td>
+                                            <td class="assignee">            Rebatikant Senapati
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-10">VMIERM-10</a><span>Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      IT Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1907373" rel="1907373" data-issuekey="VMIESOL-45404" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-45404" href="https://globe.upc.biz/jira/browse/VMIESOL-45404">VMIESOL-45404</a>
+</td>
+                                            <td class="summary"><p>
+                Siro : 3rd file does not contain pre-order addresses
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Bhawna Dalal
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-47629                        </td>
+                                            <td class="customfield_10008">      Siro : 3rd file does not contain pre-order addresses
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1918997" rel="1918997" data-issuekey="VMIESOL-47615" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-47615" href="https://globe.upc.biz/jira/browse/VMIESOL-47615">VMIESOL-47615</a>
+</td>
+                                            <td class="summary"><p>
+                Alarm refinement
+    </p>
+</td>
+                                            <td class="assignee">            Rajesh Ravisekaran
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-10">VMIERM-10</a><span>Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                                        VMIESOL-48028                        </td>
+                                            <td class="customfield_10008">      Alarm refinement
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1840942" rel="1840942" data-issuekey="VMIESOL-34829" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-34829" href="https://globe.upc.biz/jira/browse/VMIESOL-34829">VMIESOL-34829</a>
+</td>
+                                            <td class="summary"><p>
+                 Ability to Visualize E2E Network Correlating OLT, ONT, L2S, BNG and PNI in N360 - Enhancements
+    </p>
+</td>
+                                            <td class="assignee">            Rakhi Roy
+    </td>
+                                            <td class="reporter">            Pardha Jonnalagadda
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-10">VMIERM-10</a><span>Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                                        VMIESOL-47619                        </td>
+                                            <td class="customfield_10008">      34829- Ability to Visualize E2E Network Correlating OLT, ONT, L2S, BNG and PNI in N360 - Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1921849" rel="1921849" data-issuekey="VMIESOL-48124" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48124" href="https://globe.upc.biz/jira/browse/VMIESOL-48124">VMIESOL-48124</a>
+</td>
+                                            <td class="summary"><p>
+                MDUs Phase2 (Overbuild and New Developments) for Pending Network Loaders 
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48189                        </td>
+                                            <td class="customfield_10008">      MDUs Phase2 ( Overbuild and New Developments ) for Pending Loaders 
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1850640" rel="1850640" data-issuekey="VMIESOL-36501" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-36501" href="https://globe.upc.biz/jira/browse/VMIESOL-36501">VMIESOL-36501</a>
+</td>
+                                            <td class="summary"><p>
+                Overhead &amp; Multi Dwelling Unit  (PNI ) Usecases
+    </p>
+</td>
+                                            <td class="assignee">            Rakhi Roy
+    </td>
+                                            <td class="reporter">            Pardha Jonnalagadda
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-10">VMIERM-10</a><span>Monitoring &amp; Ticketing</span></td>
+                                            <td class="subtasks">                                        VMIESOL-47620                        </td>
+                                            <td class="customfield_10008">      36501 - Overhead &amp; Multi Dwelling Unit  (PNI ) Usecases
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1943771" rel="1943771" data-issuekey="VMIESOL-51971" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-51971" href="https://globe.upc.biz/jira/browse/VMIESOL-51971">VMIESOL-51971</a>
+</td>
+                                            <td class="summary"><p>
+                Celonis Mobile Orders
+    </p>
+</td>
+                                            <td class="assignee">            Yurii Kholiev
+    </td>
+                                            <td class="reporter">            Eoin Hegarty
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Celonis Mobile Orders
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1948162" rel="1948162" data-issuekey="VMIESOL-52882" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52882" href="https://globe.upc.biz/jira/browse/VMIESOL-52882">VMIESOL-52882</a>
+</td>
+                                            <td class="summary"><p>
+                Atari Pi22 Technical Debt
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Gayatri Srinivasan
+    </td>
+                                            <td class="priority">           Low
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Technical Debt
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1944717" rel="1944717" data-issuekey="VMIESOL-52273" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-52273" href="https://globe.upc.biz/jira/browse/VMIESOL-52273">VMIESOL-52273</a>
+</td>
+                                            <td class="summary"><p>
+                Spillover - (41976) - Fixed scenarios (Technical Swap)
+    </p>
+</td>
+                                            <td class="assignee">            Mainak Dutta
+    </td>
+                                            <td class="reporter">            Pinky Joshi
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Spillover - (41976) - Fixed scenarios (Technical Swap)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1899528" rel="1899528" data-issuekey="VMIESOL-44040" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-44040" href="https://globe.upc.biz/jira/browse/VMIESOL-44040">VMIESOL-44040</a>
+</td>
+                                            <td class="summary"><p>
+                GIS Build-E2E Handover Process_Build QC
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Refinement&lt;/span&gt;">Refinement</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-47625,                                                VMIESOL-52332                        </td>
+                                            <td class="customfield_10008">      GIS Build-E2E Handover Process- Build QC
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1954551" rel="1954551" data-issuekey="VMIESOL-54427" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-54427" href="https://globe.upc.biz/jira/browse/VMIESOL-54427">VMIESOL-54427</a>
+</td>
+                                            <td class="summary"><p>
+                UTC / IEMSP/ Fixed - Test support for Fixed journey epics
+    </p>
+</td>
+                                            <td class="assignee">            Karunakar Mandireddy
+    </td>
+                                            <td class="reporter">            prachi sh Sharma
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      UTC / IEMSP/ Fixed - Test support for Fixed journey epics
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1769387" rel="1769387" data-issuekey="VMIESOL-22100" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-22100" href="https://globe.upc.biz/jira/browse/VMIESOL-22100">VMIESOL-22100</a>
+</td>
+                                            <td class="summary"><p>
+                Pega - IPTV device icon 
+    </p>
+</td>
+                                            <td class="assignee">            Gopala Krishna Vankayalapaty
+    </td>
+                                            <td class="reporter">            Brian Ahern
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-22101,                                                VMIESOL-22102,                                                VMIESOL-48061                        </td>
+                                            <td class="customfield_10008">      Pega - IPTV device icon
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950898" rel="1950898" data-issuekey="VMIESOL-53361" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53361" href="https://globe.upc.biz/jira/browse/VMIESOL-53361">VMIESOL-53361</a>
+</td>
+                                            <td class="summary"><p>
+                PI22 Clarify Support Bucket
+    </p>
+</td>
+                                            <td class="assignee">            Ayushi Sharma
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      PI22 Clarify Support Bucket
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1876136" rel="1876136" data-issuekey="VMIESOL-39841" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-39841" href="https://globe.upc.biz/jira/browse/VMIESOL-39841">VMIESOL-39841</a>
+</td>
+                                            <td class="summary"><p>
+                Hawkeye Expansion Phase 1 (Design Analysis Only)
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-40500,                                                VMIESOL-48066                        </td>
+                                            <td class="customfield_10008">      Hawkeye Expansion Phase 1 (Design Analysis Only)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950872" rel="1950872" data-issuekey="VMIESOL-53343" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53343" href="https://globe.upc.biz/jira/browse/VMIESOL-53343">VMIESOL-53343</a>
+</td>
+                                            <td class="summary"><p>
+                Track DevOps Tasks
+    </p>
+</td>
+                                            <td class="assignee">            Rishikesh Kumar
+    </td>
+                                            <td class="reporter">            Rishikesh Kumar
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      VMIESol|KTLO DEVOPS TASKS
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1959040" rel="1959040" data-issuekey="VMIESOL-55303" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-55303" href="https://globe.upc.biz/jira/browse/VMIESOL-55303">VMIESOL-55303</a>
+</td>
+                                            <td class="summary"><p>
+                Product Expiry 2025
+    </p>
+</td>
+                                            <td class="assignee">            Mary Linnane
+    </td>
+                                            <td class="reporter">            Claire Fahy
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIEDFD-7752">VMIEDFD-7752</a><span>Sales, P&amp;P Changes (incl Regulatory changes)​</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      Product Expiry 2025
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1955551" rel="1955551" data-issuekey="VMIESOL-54659" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-54659" href="https://globe.upc.biz/jira/browse/VMIESOL-54659">VMIESOL-54659</a>
+</td>
+                                            <td class="summary"><p>
+                PEGA ATARI: Change Request : Transfer Balances/Payments/Credits between accounts
+    </p>
+</td>
+                                            <td class="assignee">            Preethi Jayapalan
+    </td>
+                                            <td class="reporter">            Gayatri Srinivasan
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Closed&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.&lt;/span&gt;">Closed</span>    </td>
+                                            <td class="resolution">    Rejected
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      CR: Transfer Balances/Payments/Credits between accounts
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1951709" rel="1951709" data-issuekey="VMIESOL-53604" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53604" href="https://globe.upc.biz/jira/browse/VMIESOL-53604">VMIESOL-53604</a>
+</td>
+                                            <td class="summary"><p>
+                PI 22 ADT Technical Debt
+    </p>
+</td>
+                                            <td class="assignee">    <em>Unassigned</em>
+</td>
+                                            <td class="reporter">            Gopala Krishna Vankayalapaty
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      PI 22 ADT Technical Debt
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1902290" rel="1902290" data-issuekey="VMIESOL-44483" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-44483" href="https://globe.upc.biz/jira/browse/VMIESOL-44483">VMIESOL-44483</a>
+</td>
+                                            <td class="summary"><p>
+                Validator and Loaders - Development Work - Part 2
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-47623                        </td>
+                                            <td class="customfield_10008">      Validator and Loaders - Development Work - Part 2
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1935183" rel="1935183" data-issuekey="VMIESOL-50452" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-50452" href="https://globe.upc.biz/jira/browse/VMIESOL-50452">VMIESOL-50452</a>
+</td>
+                                            <td class="summary"><p>
+                Apollo V1+
+    </p>
+</td>
+                                            <td class="assignee">            Amit Choithani
+    </td>
+                                            <td class="reporter">            Amit Choithani
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-50645                        </td>
+                                            <td class="customfield_10008">      Apollo V1+
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1898672" rel="1898672" data-issuekey="VMIEWS-3281" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3281" href="https://globe.upc.biz/jira/browse/VMIEWS-3281">VMIEWS-3281</a>
+</td>
+                                            <td class="summary"><p>
+                New Development Self Installs
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIEWS-3329,                                                VMIEWS-3397,                                                VMIEWS-3421                        </td>
+                                            <td class="customfield_10008">      New Development Self Installs
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1898674" rel="1898674" data-issuekey="VMIEWS-3283" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3283" href="https://globe.upc.biz/jira/browse/VMIEWS-3283">VMIEWS-3283</a>
+</td>
+                                            <td class="summary"><p>
+                VMR Onboarding Additional Products
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIEWS-3331,                                                VMIEWS-3406                        </td>
+                                            <td class="customfield_10008">      VMR Onboarding Additional Products
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1917528" rel="1917528" data-issuekey="VMIESOL-47164" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-47164" href="https://globe.upc.biz/jira/browse/VMIESOL-47164">VMIESOL-47164</a>
+</td>
+                                            <td class="summary"><p>
+                IEMSP-Technical Enhancements
+    </p>
+</td>
+                                            <td class="assignee">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="reporter">            Jyothi Suma Harika Macharla
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      IEMSP-Technical Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1898675" rel="1898675" data-issuekey="VMIEWS-3284" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3284" href="https://globe.upc.biz/jira/browse/VMIEWS-3284">VMIEWS-3284</a>
+</td>
+                                            <td class="summary"><p>
+                Pre-Order enablement for QC Passed Addresses &amp; GIS Support
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIEWS-3332,                                                VMIEWS-3407                        </td>
+                                            <td class="customfield_10008">      Pre-Order enablement for QC Passed Addresses &amp; GIS Support
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1950610" rel="1950610" data-issuekey="VMIESOL-53257" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-53257" href="https://globe.upc.biz/jira/browse/VMIESOL-53257">VMIESOL-53257</a>
+</td>
+                                            <td class="summary"><p>
+                BAU Support
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Planning&lt;/span&gt;">Planning</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      BAU Support
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1922286" rel="1922286" data-issuekey="VMIEWS-3346" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3346" href="https://globe.upc.biz/jira/browse/VMIEWS-3346">VMIEWS-3346</a>
+</td>
+                                            <td class="summary"><p>
+                WFM Enhancements
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Ronan Kelly
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-503">VMIERM-503</a><span>WFM Enhancements</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      WFM Enhancements
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1898677" rel="1898677" data-issuekey="VMIEWS-3286" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3286" href="https://globe.upc.biz/jira/browse/VMIEWS-3286">VMIEWS-3286</a>
+</td>
+                                            <td class="summary"><p>
+                New Partner Onboarding
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Resolved&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.&lt;/span&gt;">Resolved</span>    </td>
+                                            <td class="resolution">    Resolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIEWS-3334,                                                VMIEWS-3398,                                                VMIEWS-3404                        </td>
+                                            <td class="customfield_10008">      New Partner Onboarding
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1898673" rel="1898673" data-issuekey="VMIEWS-3282" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3282" href="https://globe.upc.biz/jira/browse/VMIEWS-3282">VMIEWS-3282</a>
+</td>
+                                            <td class="summary"><p>
+                Sync Misaligned ONTs
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-green jira-issue-status-lozenge-done aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Resolved&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.&lt;/span&gt;">Resolved</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIEWS-3330,                                                VMIEWS-3405                        </td>
+                                            <td class="customfield_10008">      Sync Misaligned ONTs
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1959776" rel="1959776" data-issuekey="VMIEWS-3537" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIEWS-3537" href="https://globe.upc.biz/jira/browse/VMIEWS-3537">VMIEWS-3537</a>
+</td>
+                                            <td class="summary"><p>
+                WS Automatic File Transfer Spillover - Change in IEMSP Implementation
+    </p>
+</td>
+                                            <td class="assignee">            Prateeksha Melanta
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           Critical
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Open&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;The issue is open and ready for the assignee to start work on it.&lt;/span&gt;">Open</span>    </td>
+                                            <td class="resolution">    <em>Unresolved</em>
+</td>
+                                            <td class="customfield_15101">
+<img class="jpo-parent-field-issue-type-icon" src="https://globe.upc.biz/jira/secure/viewavatar?size=xsmall&amp;avatarId=22716&amp;avatarType=issuetype"/><a class="jpo-parent-field-issue-key" href="https://globe.upc.biz/jira/browse/VMIERM-50">VMIERM-50</a><span>Data Feed to Partners</span></td>
+                                            <td class="subtasks">                </td>
+                                            <td class="customfield_10008">      WS Automatic File Transfer Spillover - Change in IEMSP Implementation
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow1921761" rel="1921761" data-issuekey="VMIESOL-48087" class="issuerow">
+                                            <td class="issuetype">    Epic
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="VMIESOL-48087" href="https://globe.upc.biz/jira/browse/VMIESOL-48087">VMIESOL-48087</a>
+</td>
+                                            <td class="summary"><p>
+                Address adaptation phase2 for additional ETL Validations and exhaustive errors against D&amp;B partners data submissions
+    </p>
+</td>
+                                            <td class="assignee">            Mayur Gori
+    </td>
+                                            <td class="reporter">            Manoj Karki
+    </td>
+                                            <td class="priority">           High
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-yellow jira-issue-status-lozenge-indeterminate aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;In Progress&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;jira-issue-status-tooltip-desc&quot;&gt;This issue is being actively worked on at the moment by the assignee.&lt;/span&gt;">In Progress</span>    </td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="customfield_15101">
+</td>
+                                            <td class="subtasks">                                        VMIESOL-48188,                                                VMIESOL-52331                        </td>
+                                            <td class="customfield_10008">      GIS Build - Address adaptation phase2 for additional ETL Validations and exhaustive errors against D&amp;B partners data submissions
+  </td>
+                    </tr>
+                </tbody>
+    </table>
+    </issuetable-web-component>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="11"><font size="1">
+        Generated at Mon May 19 15:04:23 CEST 2025 by Sathyanarayana G using Jira 8.7.1#807001-sha1:03e3702defc755fa4d5476f90791e76696be4d38.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
