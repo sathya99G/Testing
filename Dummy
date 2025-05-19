@@ -3,3 +3,4 @@ https://globe.upc.biz/jira/secure/Dashboard.jspa#Filter-Results/127916
 https://globe.upc.biz/jira/secure/Dashboard.jspa?selectPageId=89933
 Dummy 
 Testing
+project in ("Kennedy Wholesale", VMIE-Solution) AND issuetype = Epic AND fixVersion = PI22_Q2_25
