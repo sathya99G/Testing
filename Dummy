@@ -67,5 +67,280 @@ project in ("Kennedy Wholesale", VMIE-Solution) AND issuetype = Epic AND fixVers
         	    }
         	     
             }
+
+
+string [] existing_components; 
+
+for(string subtask in subtasks(key)){
+	existing_components = addElement(existing_components, subtask.components);
+}
+
+for(string component in components){
+	string AuthGroup ;
+	string key_created_subtask;
+
+	AuthGroup = project + "-vendor-" + component;
+
+	if(!contains(existing_components, component)){
+	   string [] custom_fields_mapping; 
+	   string [] labelsList;
+	   string subtask_summary; 
+	   string issue_security_level = AuthGroup;
+	   
+	   
+	   string [] summ;
+    	           string link;
+                   for(string linked in linkedIssues(key)){
+                        if(%linked%.project == "FLEX"){
+                            summ = linked + " : Please provide a quote: " + component;
+                        }
+                        else if (%linked%.project == "QMP"){
+                            summ = split(%key%.summary, ":")[0];
+                        }
+                        else if (%linked%.project == "IDM"){
+                            link = linked;
+                            for(string l in linkedIssues(link)){
+                                if(%l%.project == "FLEX"){
+                                    summ = l + " : Please provide a quote: " + component;
+                                }
+                            }
+                        }
+                        
+                        else{
+                            summ = "Please provide a quote: " + component;
+                        }
+                    }
+	   //subtask_summary = "Please provide a quote: " + component;
+// 	custom_fields_mapping["AuthorizedGroup"]= AuthGroup; 
+	
+	    key_created_subtask = createIssue2(
+				project, 
+				key, 
+				"Sub-task", 
+				summ,
+				priority,            // inherited from parent
+				"",
+				description,
+				component,          
+				dueDate,             // inherited from parent
+				estimate,            // inherited from parent
+				"Vendor", 
+				custom_fields_mapping
+				);
+	
+	// Copy attachments
+        for (string s in attachments) 
+        {
+            copyAttachment(key, s, key_created_subtask);
+        }
+
+// -----------------------------------------------------------------------------
+// Create AAMP Task logic.
+// -----------------------------------------------------------------------------
+	
+    	if(component == "OSS-Globe - Jira" || component == "CFW-Akana"){
+    	    %key_created_subtask%.watchers += "upcit-pullagaddi";
+    	}
+    	
+    	if(component == "CFW-Akana"){
+    	
+    	    runAs("cio-dm-automation");
+    	    
+    	    string sdm_subtask = key_created_subtask;
+    	    string [] customfields;
+    	    string idm;
+    	    string flex;
+    	    for(string linked in linkedIssues(key)){
+    	       // if(%linked%.project == "IDM"){
+    	       //     idm = linked;
+    	       // }
+    	        if(%linked%.project == "FLEX" || %linked%.project == "IDM" || %linked%.project == "QMP"){
+    	            idm = linked;
+    	        }
+    	    }
+    	    for(string linked1 in linkedIssues(idm)){
+    	       // if(%linked%.project == "IDM"){
+    	       //     idm = linked;
+    	       // }
+    	        if(%linked1%.project == "FLEX"){
+    	            flex = linked1;
+    	        }
+    	    }
+    	    
+    	    
+    	    if(issueExists(idm)){
+        	    string aamp_summary = idm + " " + summary;
+    	    
+        	    string createdIssue = createIssue(
+                        "AAMP",
+                        "", 
+                        "Task", 
+                        aamp_summary,
+                        "",            // inherited from parent
+                        "",
+                        "",          
+                        "",             // inherited from parent
+                        "",            // inherited from parent
+                        "", 
+                        customfields
+                        );
+                
+                if(issueExists(createdIssue)){
+                    %createdIssue%.customfield_15318 = key;
+                    %createdIssue%.customfield_15320 = idm;
+                    %createdIssue%.customfield_18900 = flex;
+                    // if(%idm%.issueType == "Medium Request")
+                    if(%idm%.issueType == "Medium Works" || %idm%.issueType == "Medium Request"){
+                        %createdIssue%.description = "*Medium Request PPT is Required*.\n\nDescription:\n" + %idm%.description;
+                    }
+                    else{
+                        %createdIssue%.description = "Description:\n" + %idm%.description;
+                    }
+                    for(string a in %idm%.attachments){
+                        copyAttachment(idm, a, createdIssue);
+                    }
+                    linkIssue(sdm_subtask, createdIssue, "Contains");
+                    linkIssue("AAMP-28", createdIssue, "Epic-Story Link");
+                
+               
+            
+                    if(%idm%.project == "FLEX"){
+                        if(arraySize(%idm%.customfield_23002) > 1){
+                            %createdIssue%.assignee = "upcit-pragupta";
+                        }
+                        else if(%idm%.customfield_23002 == "NL - Vodafone Ziggo"){
+                            %createdIssue%.assignee = "upcit-svutukuri";
+                        }
+                        else if(%idm%.customfield_23002 == "IE - Virgin Media"){
+                            // %createdIssue%.assignee = "upcit-ssadashiva";
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(%idm%.customfield_23002 == "CH - Sunrise"){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(%idm%.customfield_23002 == "UK - Virgin Media O2"){
+                            %createdIssue%.assignee = "upcit-pkuberan";
+                            %createdIssue%.watchers += "upcit-iacosta";
+                        }
+                        else if(%idm%.customfield_23002 == "SK - UPC Slovakia"){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(%idm%.customfield_23002 == "BE - Telenet"){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(%idm%.customfield_23002 == "AT - Magenta"){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(%idm%.customfield_23002 == "PL - Play"){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(contains(%idm%.summary, "CAPP") || contains(%idm%.summary, "CAPUAT") || contains(%idm%.description, "CAPP") || contains(%idm%.description, "CAPUAT")){
+                	        %createdIssue%.summary = "CAP : " + idm + " " + summary;
+                	        %createdIssue%.assignee = "upcit-pragupta";
+            	        }
+                        else{
+                            %createdIssue%.assignee = "upcit-pragupta";
+                        }
+                        %createdIssue%.watchers += "upcit-arajamani";
+                        %createdIssue%.watchers += "upcit-rhsunil";
+                        %createdIssue%.watchers += "upcit-rabraham";
+                        %createdIssue%.customfield_18900 = flex;
+                        string [] email_mapping;
+                    
+                        email_mapping["upcit-rhsunil"] = "Rhyni_Sunil@infosys.com";
+                        email_mapping["upcit-ssadashiva"] = "sahana.sadashiva@infosys.com";
+                        
+                        email_mapping["upcit-rabraham"] = "Rintu_Abraham@infosys.com";
+                        email_mapping["upcit-pragupta"] = "pratish.gupta01@infosys.com";
+                        email_mapping["upcit-pgowda"] = "Pallavi_Gowda@infosys.com";
+                        email_mapping["upcit-iacosta"] = "ian.costa@infosys.com";
+                        email_mapping["upcit-nlingadalli"] = "nandish.n02@infosys.com";
+                        email_mapping["upcit-arajamani"] = "arivazhagan.r@infosys.com";
+                        email_mapping["upcit-vkolliani"] = "vaishnavi.k21@infosys.com";
+                        email_mapping["upcit-svutukuri"] = "swapna.vutukuri@infosys.com";
+                        email_mapping["upcit-pkuberan"] = "prabu.k01@infosys.com";
+                        
+                        string [] watcher_emails = "prashanth_ullagaddi@infosys.com";
+                        for(string w in %createdIssue%.watchers){
+                            watcher_emails += email_mapping[w];
+                        }
+                        sendEmail(email_mapping[%createdIssue%.assignee], watcher_emails, createdIssue + " : IA Ticket Assigned.", createdIssue + " : IA Ticket Assigned.");
+                    
+                    }
+                    else if(%idm%.project == "IDM" || %idm%.project == "QMP"){
+                        if(arraySize(%idm%.customfield_10602) > 1){
+                            %createdIssue%.assignee = "upcit-pragupta";
+                        }
+                        else if(arrayFind(%idm%.customfield_10602, "NL") != -1){
+                            %createdIssue%.assignee = "upcit-svutukuri";
+                        }
+                        else if(arrayFind(%idm%.customfield_10602, "IE") != -1){
+                            // %createdIssue%.assignee = "upcit-ssadashiva";
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(arrayFind(%idm%.customfield_10602, "CH") != -1){
+                            %createdIssue%.assignee = "upcit-vkolliani";
+                        }
+                        else if(arrayFind(%idm%.customfield_10602, "UK") != -1){
+                            %createdIssue%.assignee = "upcit-pkuberan";
+                            %createdIssue%.watchers += "upcit-iacosta";
+                        }
+                        else if(contains(%idm%.summary, "CAPP") || contains(%idm%.summary, "CAPUAT") || contains(%idm%.description, "CAPP") || contains(%idm%.description, "CAPUAT")){
+                	        %createdIssue%.summary = "CAP : " + idm + " " + summary;
+                	        %createdIssue%.assignee = "upcit-pragupta";
+            	        }
+                        else{
+                            %createdIssue%.assignee = "upcit-pragupta";
+                        }
+                        %createdIssue%.watchers += "upcit-arajamani";
+                        %createdIssue%.watchers += "upcit-rhsunil";
+                        %createdIssue%.watchers += "upcit-rabraham";
+                        %createdIssue%.customfield_18900 = flex;
+                        string [] email_mapping;
+                    
+                        email_mapping["upcit-rhsunil"] = "Rhyni_Sunil@infosys.com";
+                        email_mapping["upcit-ssadashiva"] = "sahana.sadashiva@infosys.com";
+                        
+                        email_mapping["upcit-rabraham"] = "Rintu_Abraham@infosys.com";
+                        email_mapping["upcit-pragupta"] = "pratish.gupta01@infosys.com";
+                        email_mapping["upcit-pgowda"] = "Pallavi_Gowda@infosys.com";
+                        email_mapping["upcit-iacosta"] = "ian.costa@infosys.com";
+                        email_mapping["upcit-nlingadalli"] = "nandish.n02@infosys.com";
+                        email_mapping["upcit-arajamani"] = "arivazhagan.r@infosys.com";
+                        email_mapping["upcit-vkolliani"] = "vaishnavi.k21@infosys.com";
+                        email_mapping["upcit-svutukuri"] = "swapna.vutukuri@infosys.com";
+                        email_mapping["upcit-pkuberan"] = "prabu.k01@infosys.com";
+                        
+                        string [] watcher_emails = "prashanth_ullagaddi@infosys.com";
+                        for(string w in %createdIssue%.watchers){
+                            watcher_emails += email_mapping[w];
+                        }
+                        sendEmail(email_mapping[%createdIssue%.assignee], watcher_emails, createdIssue + " : IA Ticket Assigned.", createdIssue + " : IA Ticket Assigned.");
+                    
+                    }
+                //     string [] email_mapping;
+                    
+                //     email_mapping["upcit-rhsunil"] = "Rhyni_Sunil@infosys.com";
+                //     email_mapping["upcit-ssadashiva"] = "sahana.sadashiva@infosys.com";
+                    
+                //     email_mapping["upcit-rabraham"] = "Rintu_Abraham@infosys.com";
+                //     email_mapping["upcit-pragupta"] = "pratish.gupta01@infosys.com";
+                //     email_mapping["upcit-pgowda"] = "Pallavi_Gowda@infosys.com";
+                //     email_mapping["upcit-iacosta"] = "ian.costa@infosys.com";
+                //     email_mapping["upcit-nlingadalli"] = "nandish.n02@infosys.com";
+                //     email_mapping["upcit-arajamani"] = "arivazhagan.r@infosys.com";
+                //     email_mapping["upcit-vkolliani"] = "vaishnavi.k21@infosys.com";
+                //     email_mapping["upcit-svutukuri"] = "swapna.vutukuri@infosys.com";
+                    
+                //     string [] watcher_emails = "prashanth_ullagaddi@infosys.com";
+                //     for(string w in %createdIssue%.watchers){
+                //         watcher_emails += email_mapping[w];
+                //     }
+                //     sendEmail(email_mapping[%createdIssue%.assignee], watcher_emails, createdIssue + " : IA Ticket Assigned.", createdIssue + " : IA Ticket Assigned.");
+                }
+            }
+    	}
+    }
+}
            
     
