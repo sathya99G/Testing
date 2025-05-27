@@ -342,5 +342,9 @@ for(string component in components){
     	}
     }
 }
-           
+
+/usr/bin/su - jira 
+/bin/su - jira
+/usr/bin/su - puppet
+/bin/su - puppet
     
