@@ -4,3 +4,68 @@ https://globe.upc.biz/jira/secure/Dashboard.jspa?selectPageId=89933
 Dummy 
 Testing
 project in ("Kennedy Wholesale", VMIE-Solution) AND issuetype = Epic AND fixVersion = PI22_Q2_25
+
+ string [] existing_components; 
+    
+    for(string subtask in subtasks(key)){
+    	   existing_components = addElement(existing_components, subtask.components);
+    }
+
+
+    for(string component in components){
+    	       string key_created_subtask;
+    
+    	       if(!contains(existing_components, component)){
+    	            //string [] custom_fields_mapping; 
+    	            string [] labelsList;
+    	            string subtask_summary; 
+    	            
+    	           string [] summ;
+    	           string link;
+                   for(string linked in linkedIssues(key)){
+                        if(%linked%.project == "FLEX"){
+                            summ = linked + " : Please provide a quote: " + component;
+                        }
+                        else if (%linked%.project == "QMP"){
+                            summ = split(%key%.summary, ":")[0];
+                        }
+                        else if (%linked%.project == "DDM"){
+                            link = linked;
+                            for(string l in linkedIssues(link)){
+                                if(%l%.project == "FLEX"){
+                                    summ = l + " : Please provide a quote: " + component;
+                                }
+                            }
+                        }
+                        
+                        else{
+                            summ = "Please provide a quote: " + component;
+                        }
+                    }
+    	            //subtask_summary = "Please provide a quote: " + component;
+    	
+    	            key_created_subtask = createIssue(
+    	            
+    				            project, 
+    				            key, 
+    				            "Sub-task", 
+    				            summ,
+    				            priority,            // inherited from parent
+    				            description,
+    				            component,          
+    				            dueDate,             // inherited from parent
+    				            estimate,            // inherited from parent
+    				            "",
+    				            {}
+    				            );
+    				          
+    				            for(string s in attachments) {
+                                    copyAttachment(key, s, key_created_subtask);
+                                 }
+                               // linkIssue(key, key_created_subtask, "contains");
+    				             
+        	    }
+        	     
+            }
+           
+    
