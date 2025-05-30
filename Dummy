@@ -1,6 +1,9 @@
 https://globe.upc.biz/jira/secure/Dashboard.jspa
 https://globe.upc.biz/jira/secure/Dashboard.jspa#Filter-Results/127916
 https://globe.upc.biz/jira/secure/Dashboard.jspa?selectPageId=89933
+https://marketplace.atlassian.com/apps/5048/jsu-automation-suite-for-jira-workflows?hosting=datacenter&tab=overview
+https://marketplace.atlassian.com/apps/1218221/feature-bundle-extension-for-customer-portal?hosting=datacenter&tab=overview
+
 Dummy 
 Testing
 project in ("Kennedy Wholesale", VMIE-Solution) AND issuetype = Epic AND fixVersion = PI22_Q2_25
